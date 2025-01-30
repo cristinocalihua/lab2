@@ -29,7 +29,7 @@ image_names = []
 train_labels = []
 train_images = []
 
-size = 256,256
+size = 512,512
 print('folders')
 folders.remove("LICENSE.txt")
 print(folders)
@@ -72,7 +72,7 @@ labels = np.array(labels)
 
 # Develop a sequential model using tensorflow keras
 model = keras.Sequential([
-    keras.layers.Flatten(input_shape=(256,256,3)),
+    keras.layers.Flatten(input_shape=(512,512,3)),
     keras.layers.Dense(128, activation=tf.nn.tanh),
     keras.layers.Dense(5, activation=tf.nn.softmax)
 ])
