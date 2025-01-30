@@ -72,7 +72,7 @@ labels = np.array(labels)
 
 # Develop a sequential model using tensorflow keras
 model = keras.Sequential([
-    keras.layers.Flatten(input_shape=(64,64,3)),
+    keras.layers.Flatten(input_shape=(256,256,3)),
     keras.layers.Dense(128, activation=tf.nn.tanh),
     keras.layers.Dense(5, activation=tf.nn.softmax)
 ])
